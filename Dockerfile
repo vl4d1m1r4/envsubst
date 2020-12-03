@@ -1,4 +1,4 @@
-FROM alpine
+FROM quay.io/app-sre/alpine
 RUN apk add --update --no-cache libintl gettext
 
 WORKDIR /workdir
