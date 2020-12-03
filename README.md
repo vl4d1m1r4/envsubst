@@ -1,5 +1,7 @@
 # envsubst Dockerfile
 
+[![Docker Repository on Quay](https://quay.io/repository/dibi/envsubst/status "Docker Repository on Quay")](https://quay.io/repository/dibi/envsubst)
+
 This image will process a filename which is passed as an argument and substitute $FOO placeholders with ENVIRONMENT VARIABLE values. A new file of the same name is written to the `/processed` directory.
 
 local example:
