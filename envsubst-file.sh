@@ -7,7 +7,7 @@ WORKDIR=/workdir
 for i in $(ls $WORKDIR); do
   echo "Processing $i ..."
 
-  envsubst < $WORKDIR/$i > /processed/$i
+  envsubst "$(compgen -e | awk '$0="${"$0"}"')" < $WORKDIR/$i > /processed/$i
   PROCESSED=true
 done
 
